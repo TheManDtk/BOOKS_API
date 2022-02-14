@@ -9,7 +9,7 @@ load_dotenv()
 passw=os.getenv("password")
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:{}@localhost:5432/projet_iai'.format(passw)
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://fzjzeamukixucj:e03b564d687deb8c2c8e9260311a16a1710f639e7f1ef529cf4b23c20ad566cd@ec2-54-156-110-139.compute-1.amazonaws.com:5432/d6907vtd703qcd"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
